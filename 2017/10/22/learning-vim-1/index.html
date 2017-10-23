@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Jeff&#39;s blog</title>
+  <title>vim的基本操作（一）：移动 | Jeff&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="��¼ѧϰ������������">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jeff&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="这几天重新整了下windows下的开发环境，装了cmder又加了环境变量，现在方便用命令行操作了。说到命令行下的操作，有的时候只是简单地修改下文件，而启动文本编辑器再打开文件很麻烦，就想到了vim。以后linux下编辑文件时也能节省学习成本。  ##什么是Vim?##Vim是由Unix Like系统内置的vi发展出来的文本编辑器。Vim具有代码补全、编译、错误跳转等方便编程的功能，而且使用鼠标的频">
+<meta name="keywords" content="linux vim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim的基本操作（一）：移动">
+<meta property="og:url" content="http://yoursite.com/2017/10/22/learning-vim-1/index.html">
 <meta property="og:site_name" content="Jeff&#39;s blog">
-<meta property="og:description" content="��¼ѧϰ������������">
+<meta property="og:description" content="这几天重新整了下windows下的开发环境，装了cmder又加了环境变量，现在方便用命令行操作了。说到命令行下的操作，有的时候只是简单地修改下文件，而启动文本编辑器再打开文件很麻烦，就想到了vim。以后linux下编辑文件时也能节省学习成本。  ##什么是Vim?##Vim是由Unix Like系统内置的vi发展出来的文本编辑器。Vim具有代码补全、编译、错误跳转等方便编程的功能，而且使用鼠标的频">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-10-23T15:32:23.040Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jeff&#39;s blog">
-<meta name="twitter:description" content="��¼ѧϰ������������">
+<meta name="twitter:title" content="vim的基本操作（一）：移动">
+<meta name="twitter:description" content="这几天重新整了下windows下的开发环境，装了cmder又加了环境变量，现在方便用命令行操作了。说到命令行下的操作，有的时候只是简单地修改下文件，而启动文本编辑器再打开文件很麻烦，就想到了vim。以后linux下编辑文件时也能节省学习成本。  ##什么是Vim?##Vim是由Unix Like系统内置的vi发展出来的文本编辑器。Vim具有代码补全、编译、错误跳转等方便编程的功能，而且使用鼠标的频">
   
     <link rel="alternate" href="/atom.xml" title="Jeff&#39;s blog" type="application/atom+xml">
   
@@ -50,7 +52,7 @@
     <div class="collapse navbar-collapse" id="main-menu-navbar">
       <ul class="nav navbar-nav">
         
-          <li><a class="active"
+          <li><a class=""
                  href="/index.html">Home</a></li>
         
           <li><a class=""
@@ -79,131 +81,13 @@
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-learning-vim-1" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/hello-world/">hello world!!!</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2017/10/23/hello-world/" class="article-date"><time datetime="2017-10-23T05:20:20.000Z" itemprop="datePublished">2017-10-23</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print(hello world!!!)</div></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/23/hello-world/" data-id="cj94cd87p00007gu2jru17hgr" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-python-data-type" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/python-data-type/">python基本数据类型</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2017/10/22/python-data-type/" class="article-date"><time datetime="2017-10-22T11:12:14.000Z" itemprop="datePublished">2017-10-22</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>python是弱类型语言</p>
-<p>###整数（int）###</p>
-<ul>
-<li><p>在32位机器上，整数的位数为32位，取值范围为<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* 在64位系统上，整数的位数为64位，取值范围为```-2**63```～```2**63-1```，即```-9223372036854775808```～```922337203685477580</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>不用担心数值超过int的长度，python会自动转化long（长整型）</p>
-</li>
-</ul>
-<p>2进制使用<figure class="highlight plain"><figcaption><span>```0x``` 前缀。以下为进制转换函数的使用</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">&gt;&gt;&gt; bin(13) #将10进制转为2进制</div><div class="line">&apos;0b1101&apos;</div><div class="line">&gt;&gt;&gt; oct(13) #将10进制转为8进制</div><div class="line">&apos;0o15&apos;</div><div class="line">&gt;&gt;&gt; hex(13) #将10进制转为16进制</div><div class="line">&apos;0xd&apos;</div><div class="line">&gt;&gt;&gt; int(&quot;1101&quot;,2) #将2进制转为10进制</div><div class="line">13</div><div class="line">&gt;&gt;&gt; int(&quot;15&quot;,8) #将8进制转为10进制</div><div class="line">13</div><div class="line">&gt;&gt;&gt; int(&quot;d&quot;, 16) #将16进制转为10进制</div><div class="line">13</div><div class="line">&gt;&gt;&gt; bin(0xc5) #将16进制转为2进制</div><div class="line">&apos;0b11000101&apos;</div></pre></td></tr></table></figure></p>
-<p>其中<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">```python</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</div><div class="line">ValueError: invalid literal for int() with base 10: &apos;a123&apos;</div></pre></td></tr></table></figure></p>
-<p>###浮点数###<br>浮点数使用数学写法和科学记数法表示<br>数学写法：如<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">科学计数法：如```1.23e9```表示```1.23*10^9</div></pre></td></tr></table></figure></p>
-<p>###字符串###<br>python中的字符串用单引号<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">字符串内部包含的```&apos;```和```&quot;```使用转义字符```\```（反斜杠）在有歧义的字符前进行标识。</div><div class="line">例如，</div></pre></td></tr></table></figure></p>
-<p>“I\’m \”OK\”!”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">表示的字符串为</div></pre></td></tr></table></figure></p>
-<p>I’m “OK”!<br>```</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/22/python-data-type/" data-id="cj94cd87w00017gu2nv1rzbik" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
-
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-learning-vim-1" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/learning-vim-1/">vim的基本操作（一）：移动</a>
+    <h1 class="article-title" itemprop="name">
+      vim的基本操作（一）：移动
     </h1>
   
 
@@ -318,11 +202,22 @@
     </footer>
   </div>
   
-</article>
-
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  
+  <li role="presentation">
+    <a href="/2017/10/22/python-data-type/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">python基本数据类型</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
 
 
   
+</article>
 
 
 
