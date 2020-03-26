@@ -11,13 +11,9 @@ before_install:
 
 install:
   - npm install
-  - npm install hexo-deployer-git --save
 script:
   - hexo clean
   - hexo generate
-after_script:
-  - git config user.name "Jeff2310"
-  - git config user.email "jeff23101719@gmail.com"
 deploy:
   provider: pages
   skip-cleanup: true
